@@ -5,7 +5,6 @@ color = ["rgb(124, 5, 156)","rgb(90, 173, 218)", "rgb(0, 68, 31)", "Red", "Orang
 document.getElementById("item").onclick=function(){clickedTime=Date.now();
     document.getElementById("start").style.display ="none"
     reactionTime=(clickedTime-createdTime)/1000;
-    b++;
     createdTime=Date.now();
     var today = new Date();
     myFunction();
