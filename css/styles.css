@@ -6,14 +6,8 @@
   
   body {
     background-color: #010004;
-    font-family: 'Press Start 2P', cursive 
-    background: repeating-linear-gradient(
-    to bottom,
-    #0f0a1e,
-    #0f0a1e 2px,
-    lighten(#0f0a1e, 3%) 2px,
-    lighten(#0f0a1e, 3%) 4px
-  )
+    font-family: 'Press Start 2P', cursive ;
+    
     
       
     
@@ -62,9 +56,10 @@
     line-height: 40px;
     letter-spacing: 5px;
     text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
-    /* animation: blink 1.25s steps(4, start) infinite ; */
+    animation: blink 1s steps(4, start) infinite ;
     animation: blink 1.25s linear infinite;
-    
+    font-size: 3vw;
+    margin-left: -9vw;
     
 }
 #start2{
@@ -73,8 +68,34 @@
     padding: 5px;
     cursor: pointer;
     color: white;
+    font-size: 25px;
 }
 #scoreboard{
+    font-size: 10px;
+    color: #fff;
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    height: 100%;
+    height: fit-content;
+    padding-left:40px;
+    background-color: rgb(24, 5, 48);
+    background-color: #0f0a1e;
+    display: block;
+    border-left: 3px solid #fff;
+    min-height: 100%;
+    height: fit-content;
+
+  }
+  #bestTimes{
     font-size: 10px;
     color: #fff;
     width: 100%;
@@ -94,9 +115,9 @@
     background-color: rgb(24, 5, 48);
     background-color: #0f0a1e;
     display: none;
-    display: block;
-    overflow:none;
-
+    border-left: 3px solid #fff;
+    min-height: 100%;
+    height: fit-content;
   }
   #btn{
     margin-left: -40px;
@@ -126,8 +147,68 @@
     border: none;
     cursor: pointer;
     float: right;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.75vw;
+    letter-spacing: 0.3vw;
+}
+#btn3{
+  margin-left: -40px;
+  padding:5px;
+  color: white;
+  font-size: 25px;
+  background-color:rgb(124, 5, 156); ;
+  background-color:rgb(58, 2, 73);
+  background-color:#0f0a1e;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+  border: none;
+  cursor: pointer;
+
+}
+#btn4{
+  color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background-color:#0f0a1e;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    display: none;
+    display: block;
+    overflow:none;
+    display: none;
+    padding:5px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.75vw;
+    letter-spacing: 0.3vw;
+}
+#btn:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+#btn2:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+#btn3:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+#btn4:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+#buttons{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 }
 #watch{
+  position: absolute;
     color: #fff;
     font-size: 40px;
     text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
@@ -138,9 +219,19 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 5px;
+    padding-top: 20px;
+    font-size: 2.5vw;
     /* font-family: 'Press Start 2P', cursive ; */
    
 
+}
+#header1{
+  display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 
 @keyframes blink {
